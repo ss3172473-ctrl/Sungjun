@@ -1,39 +1,406 @@
-Skip to content
-Navigation Menu
-ss3172473-ctrl
-BAE
-
-Type / to search
-Code
-Issues
-Pull requests
-Actions
-Projects
-Wiki
-Security
-Insights
-Settings
-BAE/
-Go to file
-t
-ss3172473-ctrl
-ss3172473-ctrl
-bae party
-0bfcbcd
- · 
-now
-Name	Last commit message	Last commit date
-README.md
-Initial commit
-12 minutes ago
-party
-bae party
-now
-배용우.html
-Add files via upload
-10 minutes ago
-README.md
-BAE
-배용우 초대장
-
-BAE/ at main · ss3172473-ctrl/BAE
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>나라장터 입찰 공고 대시보드</title>
+    <style>
+        :root {
+            --primary: #2563eb;
+            --bg: #f8fafc;
+            --card-bg: #ffffff;
+            --text: #1e293b;
+            --text-light: #64748b;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            background-color: var(--bg);
+            color: var(--text);
+            margin: 0;
+            padding: 20px;
+            line-height: 1.5;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding: 20px 0;
+        }
+        h1 {
+            font-size: 2rem;
+            margin-bottom: 10px;
+            color: var(--text);
+        }
+        .update-time {
+            color: var(--text-light);
+            font-size: 0.9rem;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+        }
+        .card {
+            background: var(--card-bg);
+            border-radius: 16px;
+            padding: 20px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+            transition: transform 0.2s, box-shadow 0.2s;
+            display: flex;
+            flex-direction: column;
+            position: relative;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+        }
+        .badge {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background: #e2e8f0;
+            color: #475569;
+            padding: 4px 8px;
+            border-radius: 6px;
+            font-size: 0.8rem;
+            font-weight: 600;
+        }
+        .agency {
+            color: var(--primary);
+            font-weight: 600;
+            font-size: 0.9rem;
+            margin-bottom: 8px;
+        }
+        .title {
+            font-size: 1.25rem;
+            font-weight: 700;
+            margin: 0 0 16px 0;
+            line-height: 1.4;
+            flex-grow: 1; /* 제목이 길어도 버튼을 아래로 밀어줌 */
+        }
+        .meta {
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+            font-size: 0.9rem;
+            color: var(--text-light);
+            margin-bottom: 20px;
+        }
+        .btn {
+            display: block;
+            width: 100%;
+            padding: 12px;
+            background: var(--primary);
+            color: white;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: 600;
+            transition: background 0.2s;
+            box-sizing: border-box; /* padding 포함 너비 계산 */
+        }
+        .btn:hover {
+            background: #1d4ed8;
+        }
+        @media (max-width: 600px) {
+            .grid {
+                grid-template-columns: 1fr;
+            }
+            h1 {
+                font-size: 1.75rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🏛️ 유니트미디어 입찰 공고 대시보드</h1>
+            <div class="update-time">최근 업데이트: 2025-12-22 20:14:37</div>
+        </header>
+        
+        <div class="grid">
+            
+        <div class="card">
+            <div class="badge">전국</div>
+            <div class="agency">농촌진흥청</div>
+            <h2 class="title">2026년 맞춤형 농업기술 콘텐츠(동영상) 확충 사업 용역</h2>
+            <div class="meta">
+                <span>⏰ 마감: 마감일 없음</span>
+                <span>💰 0원</span>
+            </div>
+            <a href="https://www.g2b.go.kr:8101/ep/invitation/publish/bidInfoDtl.do?bidno=R25BK01236473" target="_blank" class="btn">공고 보러가기</a>
+        </div>
+        
+        <div class="card">
+            <div class="badge">전국</div>
+            <div class="agency">재단법인 성남문화재단</div>
+            <h2 class="title">2026년도 격월간 아트뷰 제작 용역</h2>
+            <div class="meta">
+                <span>⏰ 마감: 마감일 없음</span>
+                <span>💰 0원</span>
+            </div>
+            <a href="https://www.g2b.go.kr:8101/ep/invitation/publish/bidInfoDtl.do?bidno=R25BK01242499" target="_blank" class="btn">공고 보러가기</a>
+        </div>
+        
+        <div class="card">
+            <div class="badge">전국</div>
+            <div class="agency">경기도 부천시</div>
+            <h2 class="title">2026년 부천시 유튜브 운영 및 콘텐츠 제작 용역</h2>
+            <div class="meta">
+                <span>⏰ 마감: 마감일 없음</span>
+                <span>💰 0원</span>
+            </div>
+            <a href="https://www.g2b.go.kr:8101/ep/invitation/publish/bidInfoDtl.do?bidno=R25BK01241543" target="_blank" class="btn">공고 보러가기</a>
+        </div>
+        
+        <div class="card">
+            <div class="badge">전국</div>
+            <div class="agency">한동대학교 산학협력단</div>
+            <h2 class="title">한동대학교 RISE사업단 K-U시티(울릉형) AI 교육을 위한 콘텐츠 제작 용역(수의시담)</h2>
+            <div class="meta">
+                <span>⏰ 마감: 마감일 없음</span>
+                <span>💰 0원</span>
+            </div>
+            <a href="https://www.g2b.go.kr:8101/ep/invitation/publish/bidInfoDtl.do?bidno=R25BK01241655" target="_blank" class="btn">공고 보러가기</a>
+        </div>
+        
+        <div class="card">
+            <div class="badge">전국</div>
+            <div class="agency">전라남도 영암군</div>
+            <h2 class="title">남도음식거리(영암독천낙지거리) 조성 공공시설물 제작‧설치 용역(협상에의한계약) 제안서 제출 안내 공고</h2>
+            <div class="meta">
+                <span>⏰ 마감: 마감일 없음</span>
+                <span>💰 0원</span>
+            </div>
+            <a href="https://www.g2b.go.kr:8101/ep/invitation/publish/bidInfoDtl.do?bidno=R25BK01242524" target="_blank" class="btn">공고 보러가기</a>
+        </div>
+        
+        <div class="card">
+            <div class="badge">전국</div>
+            <div class="agency">한국영상대학교</div>
+            <h2 class="title">2026학년도 한국영상대학교 통학(셔틀)버스 임차 및 운송 용역</h2>
+            <div class="meta">
+                <span>⏰ 마감: 마감일 없음</span>
+                <span>💰 0원</span>
+            </div>
+            <a href="https://www.g2b.go.kr:8101/ep/invitation/publish/bidInfoDtl.do?bidno=R25BK01242505" target="_blank" class="btn">공고 보러가기</a>
+        </div>
+        
+        <div class="card">
+            <div class="badge">전국</div>
+            <div class="agency">문화체육관광부 국립장애인도서관</div>
+            <h2 class="title">2026년 시각장애인용 데이지자료 제작 및 운영 사업</h2>
+            <div class="meta">
+                <span>⏰ 마감: 마감일 없음</span>
+                <span>💰 0원</span>
+            </div>
+            <a href="https://www.g2b.go.kr:8101/ep/invitation/publish/bidInfoDtl.do?bidno=R25BK01241102" target="_blank" class="btn">공고 보러가기</a>
+        </div>
+        
+        <div class="card">
+            <div class="badge">전국</div>
+            <div class="agency">한국언론진흥재단</div>
+            <h2 class="title">2026년 충북 관광 SNS채널 운영 홍보 마케팅</h2>
+            <div class="meta">
+                <span>⏰ 마감: 마감일 없음</span>
+                <span>💰 0원</span>
+            </div>
+            <a href="https://www.g2b.go.kr:8101/ep/invitation/publish/bidInfoDtl.do?bidno=R25BK01234588" target="_blank" class="btn">공고 보러가기</a>
+        </div>
+        
+        <div class="card">
+            <div class="badge">전국</div>
+            <div class="agency">서울대학교 연구처</div>
+            <h2 class="title">서울대학교 선도연구진흥센터 에너지이니셔티브연구단 교육 영상 제작 용역</h2>
+            <div class="meta">
+                <span>⏰ 마감: 마감일 없음</span>
+                <span>💰 0원</span>
+            </div>
+            <a href="https://www.g2b.go.kr:8101/ep/invitation/publish/bidInfoDtl.do?bidno=R25BK01242639" target="_blank" class="btn">공고 보러가기</a>
+        </div>
+        
+        <div class="card">
+            <div class="badge">전국</div>
+            <div class="agency">법제처</div>
+            <h2 class="title">2026년 법나들이 기획 및 편집</h2>
+            <div class="meta">
+                <span>⏰ 마감: 마감일 없음</span>
+                <span>💰 0원</span>
+            </div>
+            <a href="https://www.g2b.go.kr:8101/ep/invitation/publish/bidInfoDtl.do?bidno=R25BK01238869" target="_blank" class="btn">공고 보러가기</a>
+        </div>
+        
+        <div class="card">
+            <div class="badge">전국</div>
+            <div class="agency">원광디지털대학교</div>
+            <h2 class="title">청각장애대학생 수강과목 자막 제작 사업 입찰 </h2>
+            <div class="meta">
+                <span>⏰ 마감: 마감일 없음</span>
+                <span>💰 0원</span>
+            </div>
+            <a href="https://www.g2b.go.kr:8101/ep/invitation/publish/bidInfoDtl.do?bidno=R25BK01242730" target="_blank" class="btn">공고 보러가기</a>
+        </div>
+        
+        <div class="card">
+            <div class="badge">전국</div>
+            <div class="agency">풍산다움 사업단</div>
+            <h2 class="title">풍산읍 중심상권 푸드 콘텐츠 개발 용역</h2>
+            <div class="meta">
+                <span>⏰ 마감: 마감일 없음</span>
+                <span>💰 0원</span>
+            </div>
+            <a href="https://www.g2b.go.kr:8101/ep/invitation/publish/bidInfoDtl.do?bidno=R25BK01242741" target="_blank" class="btn">공고 보러가기</a>
+        </div>
+        
+        <div class="card">
+            <div class="badge">전국</div>
+            <div class="agency">사회복지법인 굿네이버스</div>
+            <h2 class="title">보이스피싱제로(전기통신 금융사기 피해 지원 및 예방 사업) 3개년 성과보고서 제작 업체 선정</h2>
+            <div class="meta">
+                <span>⏰ 마감: 마감일 없음</span>
+                <span>💰 0원</span>
+            </div>
+            <a href="https://www.g2b.go.kr:8101/ep/invitation/publish/bidInfoDtl.do?bidno=R25BK01242759" target="_blank" class="btn">공고 보러가기</a>
+        </div>
+        
+        <div class="card">
+            <div class="badge">전국</div>
+            <div class="agency">전북대학교</div>
+            <h2 class="title">2026년도 1차 JST공유대학(원) 교과콘텐츠 개발 제안요청서(농생명바이오·창업)</h2>
+            <div class="meta">
+                <span>⏰ 마감: 마감일 없음</span>
+                <span>💰 0원</span>
+            </div>
+            <a href="https://www.g2b.go.kr:8101/ep/invitation/publish/bidInfoDtl.do?bidno=R25BK01242801" target="_blank" class="btn">공고 보러가기</a>
+        </div>
+        
+        <div class="card">
+            <div class="badge">전국</div>
+            <div class="agency">사회복지법인 굿네이버스</div>
+            <h2 class="title">보이스피싱제로(전기통신 금융사기 피해 지원 및 예방 사업) 온라인 예방 교육 홍보 대행 업체 선정</h2>
+            <div class="meta">
+                <span>⏰ 마감: 마감일 없음</span>
+                <span>💰 0원</span>
+            </div>
+            <a href="https://www.g2b.go.kr:8101/ep/invitation/publish/bidInfoDtl.do?bidno=R25BK01242829" target="_blank" class="btn">공고 보러가기</a>
+        </div>
+        
+        <div class="card">
+            <div class="badge">전국</div>
+            <div class="agency">한국의료분쟁조정중재원</div>
+            <h2 class="title">2026년 의료중재원 SNS 홍보 및 홍보부스 용역 계약 추진</h2>
+            <div class="meta">
+                <span>⏰ 마감: 마감일 없음</span>
+                <span>💰 0원</span>
+            </div>
+            <a href="https://www.g2b.go.kr:8101/ep/invitation/publish/bidInfoDtl.do?bidno=R25BK01233324" target="_blank" class="btn">공고 보러가기</a>
+        </div>
+        
+        <div class="card">
+            <div class="badge">전국</div>
+            <div class="agency">전북대학교</div>
+            <h2 class="title">2026년도 1차 JST공유대학(원) 교과콘텐츠 개발(미래수송기기·에너지신산업)</h2>
+            <div class="meta">
+                <span>⏰ 마감: 마감일 없음</span>
+                <span>💰 0원</span>
+            </div>
+            <a href="https://www.g2b.go.kr:8101/ep/invitation/publish/bidInfoDtl.do?bidno=R25BK01242855" target="_blank" class="btn">공고 보러가기</a>
+        </div>
+        
+        <div class="card">
+            <div class="badge">전국</div>
+            <div class="agency">(사)한국야구위원회</div>
+            <h2 class="title">2026 KBO 비디오판독센터 사업 대행업체 선정</h2>
+            <div class="meta">
+                <span>⏰ 마감: 마감일 없음</span>
+                <span>💰 0원</span>
+            </div>
+            <a href="https://www.g2b.go.kr:8101/ep/invitation/publish/bidInfoDtl.do?bidno=R25BK01242957" target="_blank" class="btn">공고 보러가기</a>
+        </div>
+        
+        <div class="card">
+            <div class="badge">전국</div>
+            <div class="agency">한국언론진흥재단</div>
+            <h2 class="title">2026년 온라인 교사 연수 운영 및 콘텐츠 개발 사업</h2>
+            <div class="meta">
+                <span>⏰ 마감: 마감일 없음</span>
+                <span>💰 0원</span>
+            </div>
+            <a href="https://www.g2b.go.kr:8101/ep/invitation/publish/bidInfoDtl.do?bidno=R25BK01234104" target="_blank" class="btn">공고 보러가기</a>
+        </div>
+        
+        <div class="card">
+            <div class="badge">전국</div>
+            <div class="agency">한국언론진흥재단</div>
+            <h2 class="title">2026년도 국민건강보험공단 소셜미디어 운영지원 용역</h2>
+            <div class="meta">
+                <span>⏰ 마감: 마감일 없음</span>
+                <span>💰 0원</span>
+            </div>
+            <a href="https://www.g2b.go.kr:8101/ep/invitation/publish/bidInfoDtl.do?bidno=R25BK01234531" target="_blank" class="btn">공고 보러가기</a>
+        </div>
+        
+        <div class="card">
+            <div class="badge">전국</div>
+            <div class="agency">한국언론진흥재단</div>
+            <h2 class="title">질병관리청 2026년 국가예방접종사업 홍보사업</h2>
+            <div class="meta">
+                <span>⏰ 마감: 마감일 없음</span>
+                <span>💰 0원</span>
+            </div>
+            <a href="https://www.g2b.go.kr:8101/ep/invitation/publish/bidInfoDtl.do?bidno=R25BK01212619" target="_blank" class="btn">공고 보러가기</a>
+        </div>
+        
+        <div class="card">
+            <div class="badge">전국</div>
+            <div class="agency">경상북도 김천시</div>
+            <h2 class="title">2026년 월간 생활정보지 김천사랑방 제작</h2>
+            <div class="meta">
+                <span>⏰ 마감: 마감일 없음</span>
+                <span>💰 0원</span>
+            </div>
+            <a href="https://www.g2b.go.kr:8101/ep/invitation/publish/bidInfoDtl.do?bidno=R25BK01240066" target="_blank" class="btn">공고 보러가기</a>
+        </div>
+        
+        <div class="card">
+            <div class="badge">전국</div>
+            <div class="agency">사단법인 한국오리협회</div>
+            <h2 class="title">[긴급] 2026년도 오리마을지 제작·발송 대행업체 선정 입찰 재공고</h2>
+            <div class="meta">
+                <span>⏰ 마감: 마감일 없음</span>
+                <span>💰 0원</span>
+            </div>
+            <a href="https://www.g2b.go.kr:8101/ep/invitation/publish/bidInfoDtl.do?bidno=R25BK01240469" target="_blank" class="btn">공고 보러가기</a>
+        </div>
+        
+        <div class="card">
+            <div class="badge">전국</div>
+            <div class="agency">경상국립대학교</div>
+            <h2 class="title">경상국립대학교 글로컬대학사업단 메타버스 방사선 안전교육 콘텐츠 개발 용역</h2>
+            <div class="meta">
+                <span>⏰ 마감: 마감일 없음</span>
+                <span>💰 0원</span>
+            </div>
+            <a href="https://www.g2b.go.kr:8101/ep/invitation/publish/bidInfoDtl.do?bidno=R25BK01240508" target="_blank" class="btn">공고 보러가기</a>
+        </div>
+        
+        <div class="card">
+            <div class="badge">전국</div>
+            <div class="agency">경기도 용인시</div>
+            <h2 class="title">(긴급)2026년 재난안전 정보시스템 유지관리 연간단가 용역(재난영상 CCTV)</h2>
+            <div class="meta">
+                <span>⏰ 마감: 마감일 없음</span>
+                <span>💰 0원</span>
+            </div>
+            <a href="https://www.g2b.go.kr:8101/ep/invitation/publish/bidInfoDtl.do?bidno=R25BK01240798" target="_blank" class="btn">공고 보러가기</a>
+        </div>
+        
+        </div>
+    </div>
+</body>
+</html>
+    
